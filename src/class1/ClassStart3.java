@@ -8,6 +8,15 @@ public class ClassStart3 {
          * student1 = new Student(); -> 1. Student 객체 생성
          * student1 = x001;          -> 2. new Student()의 결과로 x001 참조값 반환
          * student1 = x001;          -> 3. 최종결과
+         *
+         * 객체 값 대입
+         * student1.name = "학생1"; -> 1. student1 객체의 name 멤버 변수에 값 대입
+         * x001.name = "학생1";     -> 2. 변수에 있는 참조값을 통해 실제 객체에 접근, 해당 객체의 name 멤버 변수에 값 대입
+         *
+         * 객체 값 읽기
+         * System.out.println("이름" + student1.name); -> 1. 객체 값 읽기
+         * System.out.println("이름" + x001.name);     -> 2. 변수에 있는 참조값을 통해 실제 객체에 접근하고, name 멤버 변수에 접근한다.
+         * System.out.println("이름" + "학생1");        -> 3. 객체의 멤버 변수의 값을 읽어옴
          */
         Student student1;
         student1 = new Student(); //x001

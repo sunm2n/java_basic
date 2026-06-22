@@ -1,5 +1,8 @@
 package static2;
 
+//import static static2.DecoData.staticCall;
+//import static static2.DecoData.*;
+
 public class DecoDataMain {
 
     public static void main(String[] args) {
@@ -14,6 +17,12 @@ public class DecoDataMain {
         DecoData data2 = new DecoData();
         data2.instanceCall();
 
-        DecoData.staticCall(data1);
+        //추가
+        //인스턴스를 통한 접근
+        DecoData data3 = new DecoData();
+        data3.staticCall(); //인스턴스 소속처럼 보여서 이렇게 쓰지 않음 아래 예시 처럼 작성하는 것이 바람직함
+
+        // 클래스를 통한 접근
+        DecoData.staticCall();
     }
 }
